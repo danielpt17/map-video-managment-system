@@ -1,0 +1,14 @@
+<div class="container">
+  <h1 class="text h2 white center">Alerts</h1>
+  <div class="alerts-container">
+    <div (click)="onSelectAlert(alert)" class="alert" *ngFor="let alert of alerts">
+      <p [title]="alert.description" class="text Body-1 ellipsis white">Description: {{alert.description}}</p>
+      <p [title]="alert.time" class="text Body-1 ellipsis white">Time: {{alert.time}}</p>
+      <div class="geo-location">
+        <p [title]="alert.geolocation.long" class="text Body-1 ellipsis white">long: {{alert.geolocation.long}}, </p>
+        <p [title]="alert.geolocation.lat" class="text Body-1 ellipsis white">lat: {{alert.geolocation.lat}}</p>
+      </div>
+    </div>
+  </div>
+</div>
+

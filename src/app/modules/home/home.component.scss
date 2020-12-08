@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+  position: relative;
+
+  .map {
+    width: 50%;
+  }
+
+  .cameras {
+    width: 25%;
+  }
+
+  .alerts {
+    width: 25%;
+  }
+}

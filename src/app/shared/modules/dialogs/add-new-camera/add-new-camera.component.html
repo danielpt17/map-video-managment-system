@@ -1,0 +1,10 @@
+<form class="form-container" [formGroup]="newCamera" (ngSubmit)="onSubmit()">
+  <h1>Add new camera:</h1>
+  <input placeholder="please add location" class="input" type="text" formControlName="cameraName">
+  <div class="buttons-container">
+    <button class="button" (click)="onCancel()" type="button">Cancel</button>
+    <button class="button" type="submit" [disabled]="newCamera.invalid">
+      Add camera
+    </button>
+  </div>
+</form>

@@ -1,0 +1,8 @@
+<div class="container">
+  <app-cameras-section (addCamera)="onAddNewCamera()" (selectedCamera)="onSelectedCamera($event)" [cameras]="cameras"
+                       class="cameras"></app-cameras-section>
+  <app-map [selectedCamera]="selectedCamera"
+           [cameras]="cameras" class="map"></app-map>
+  <app-alerts (selectedAlert)="onSelectedAlert($event)" [alerts]="alerts" class="alerts"></app-alerts>
+</div>
+

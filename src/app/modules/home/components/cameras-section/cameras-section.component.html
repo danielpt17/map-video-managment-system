@@ -1,0 +1,10 @@
+<div class="container">
+  <h1 class="text h2 white center">Cameras</h1>
+  <div class="cameras-container">
+    <div class="camera" *ngFor="let camera of cameras">
+      <p (click)="onCameraClick(camera)" class="text Body-1 ellipsis white as-button">{{camera.name}}</p>
+    </div>
+  </div>
+  <button (click)="onAddNewCamera()" class="button text as-button ">Add camera</button>
+</div>
+
