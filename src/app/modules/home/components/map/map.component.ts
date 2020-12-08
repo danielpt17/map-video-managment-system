@@ -40,7 +40,7 @@ export class MapComponent implements OnInit, OnChanges {
         this.map.removeLayer(this.selectedCameraMarkers[0]);
         this.selectedCameraMarkers = [];
       }
-      this.map.setView([this.selectedCamera.lat, this.selectedCamera.long]);
+      this.map.setView([this.selectedCamera.lat, this.selectedCamera.long], 100);
       const animatedCircleIcon = {
         icon: Leaflet.divIcon({
           className: 'css-icon',
